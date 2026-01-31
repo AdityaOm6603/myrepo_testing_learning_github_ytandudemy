@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Page wrapper */
+.page {
+    width: 92%;
+    max-width: 1000px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero section */
+.hero {
+    padding: 32px;
+    text-align: center;
+    background: linear-gradient(135deg, #1f2933, #111827);
+    color: #ffffff;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #cbd5e1;
+}
+
+/* Main content */
+.content {
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Card base */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #1f2933;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+.card ul {
+    padding-left: 18px;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* Accent colors per section */
+.about {
+    border-left-color: #6366f1;
+}
+
+.experience {
+    border-left-color: #10b981;
+}
+
+.learning {
+    border-left-color: #f59e0b;
+}
+
+.hobbies {
+    border-left-color: #ec4899;
+}
+
+.devops {
+    border-left-color: #3b82f6;
+    grid-column: span 2;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 16px;
+    background-color: #f1f5f9;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .devops {
+        grid-column: span 1;
+    }
+}
